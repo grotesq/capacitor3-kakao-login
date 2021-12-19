@@ -124,4 +124,20 @@ import KakaoSDKTemplate
             }
         }
     }
+
+    @objc public func me(_ call: CAPPluginCall) -> Void {
+        UserApi.shared.me() {(user, error) in
+            if let error = error {
+                print(error)
+                call.reject("error")
+            }
+            else {
+                call.resolve([
+                    "id": user?.id,
+                    "email": user?.kakaoAccount?.email,
+                    "nickname": user?.kakaoAccount?.profile?.nickname
+                ])
+            }
+        }
+    }
 }

@@ -117,4 +117,22 @@ public class Capacitor3KakaoLogin {
                 }
             );
     }
+
+    public void me(PluginCall call) {
+        UserApiClient
+            .getInstance()
+            .me((user, error) -> {
+                if( error != null ) {
+                    call.reject(error.toString());
+                }
+                else {
+                    JSObject ret = new JSObject();
+                    ret.put("id",user.getId());
+                    ret.put("email",user.getKakaoAccount().getEmail());
+                    ret.put("nickname",user.getKakaoAccount().getProfile().getNickname());
+                    call.resolve(ret);
+                }
+                return null;
+            });
+    }
 }

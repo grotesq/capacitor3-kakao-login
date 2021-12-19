@@ -51,4 +51,9 @@ public class Capacitor3KakaoLoginPlugin extends Plugin {
     public void sendLinkFeed(PluginCall call) {
         implementation.sendLinkFeed(call);
     }
+
+    @PluginMethod
+    public void me(PluginCall call) {
+        implementation.me(call);
+    }
 }

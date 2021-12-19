@@ -41,4 +41,10 @@ public class Capacitor3KakaoLoginPlugin: CAPPlugin {
             self.implementation.sendLinkFeed(call)
         }
     }
+    
+    @objc func me(_ call: CAPPluginCall) {
+        DispatchQueue.main.async {
+            self.implementation.me(call)
+        }
+    }
 }

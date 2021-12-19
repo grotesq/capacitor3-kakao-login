@@ -9,4 +9,5 @@ CAP_PLUGIN(Capacitor3KakaoLoginPlugin, "Capacitor3KakaoLogin",
            CAP_PLUGIN_METHOD(kakaoLogout, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(kakaoUnlink, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(sendLinkFeed, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(me, CAPPluginReturnPromise);
 )
