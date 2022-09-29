@@ -5,12 +5,11 @@ def capacitor_pods
   use_frameworks!
   pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../node_modules/@capacitor/ios'
-  pod 'KakaoSDKCommon'
-  pod 'KakaoSDKAuth'
-  pod 'KakaoSDKUser'
-  pod 'KakaoSDKTalk'
-#  pod 'KakaoSDKLink'
-  pod 'KakaoSDKTemplate'
+  pod 'KakaoSDKCommon', '~> 2.11'
+  pod 'KakaoSDKAuth', '~> 2.11'
+  pod 'KakaoSDKUser', '~> 2.11'
+  pod 'KakaoSDKTalk', '~> 2.11'
+  pod 'KakaoSDKTemplate', '~> 2.11'
   
 end
 
