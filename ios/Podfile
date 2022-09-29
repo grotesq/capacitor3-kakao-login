@@ -6,7 +6,7 @@ def capacitor_pods
   pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../node_modules/@capacitor/ios'
   pod 'KakaoSDKCommon'
-  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKAuth', '~> 2.11.3'
   pod 'KakaoSDKUser'
   pod 'KakaoSDKTalk'
   pod 'KakaoSDKLink'
