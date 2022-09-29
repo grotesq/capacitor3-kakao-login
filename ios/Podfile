@@ -9,7 +9,7 @@ def capacitor_pods
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
   pod 'KakaoSDKTalk'
-  pod 'KakaoSDKLink'
+#  pod 'KakaoSDKLink'
   pod 'KakaoSDKTemplate'
   
 end
